@@ -248,7 +248,7 @@ export default {
             if (res.data == "用户注册") {
               console.log("用户注册");
               var oldUrl = window.location.href.split("?")[0];
-              // location.href = oldUrl + "register";
+              location.href = oldUrl + "register";
             } else {
               location.reload();
             }
@@ -351,7 +351,7 @@ export default {
               duration: 1200,
             });
             var oldUrl = window.location.href.split("?")[0];
-            // location.href = oldUrl + "register";
+            location.href = oldUrl + "register";
           }
           this.tag = res.data.tag;
           if (this.tag == 1) {
@@ -381,7 +381,7 @@ export default {
             message: "获取用户详细信息失败",
             duration: 1200,
           });
-          // location.href = oldUrl + "register";
+          location.href = oldUrl + "register";
         });
     },
     lastpage: function () {
