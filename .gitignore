@@ -13,3 +13,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 menu.md
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE

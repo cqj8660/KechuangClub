@@ -240,7 +240,7 @@ export default {
         console.log(params);
         getOpenid(params).then((res) => {
           console.log("getopenid", res);
-          this.setCookie("openId", res.data, -1);
+          this.setCookie("openId", res.data, "1d");
           this.openId = res.data;
           params.openId = this.openId;
           userRegister(params).then((res) => {
